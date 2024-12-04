@@ -1,0 +1,15 @@
+<div>
+  <h1>Todays forcast</h1>
+  <br>
+  <div>City: <%= data.name %></div>
+  <br>
+  <div>weather description: <%= data.weather[0].description %></div>
+  <br>
+  <div>
+    Current Temp: <%= (data.main.temp - 273.15).toFixed(2) %> °C 
+  
+  </div>
+  <br>
+  <br>
+  <a href="/">Back to home</a>
+</div>
